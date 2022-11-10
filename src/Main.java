@@ -1,25 +1,38 @@
 public class Main {
     public static void main(String[] args) {
-        // 1, 2 задачи
+        // цельночисленные
         int[] threeNumbers = new int[3];
         threeNumbers[0] = 1;
         threeNumbers[1] = 2;
-        threeNumbers[2] = 3; {
-            System.out.print(threeNumbers[0] + ", ");
-            System.out.print(threeNumbers[1] + ", ");
-            System.out.print(threeNumbers[2]+"\n");
+        threeNumbers[2] = 3;
+        int lastSymbolT = threeNumbers[threeNumbers.length - 1];
+        for (int i = 0; i < threeNumbers.length - 1; i++) {
+            System.out.print(threeNumbers[i] + ", ");
+        } {
+            System.out.print(lastSymbolT);
         }
-        double[] threeFractions = {1.57, 7.654, 9.986}; {
-            System.out.print(threeFractions[0] + ", ");
-            System.out.print(threeFractions[1] + ", ");
-            System.out.print(threeFractions[2]+"\n");
+        System.out.println(" ");
+        // дробные
+        double[] threeFractions = {1.57, 7.654, 9.986};
+        double lastSymbol = threeFractions[threeFractions.length - 1];
+            for (int i = 0; i < threeFractions.length - 1; i++) {
+                System.out.print(threeFractions[i] + ", ");
+            } {
+            System.out.print(lastSymbol);
         }
+        System.out.println(" ");
+        // символьные
         char[] world = new char[5];
         world[0] = 'H';
         world[1] = 'e';
         world[2] = 'l';
         world[3] = 'l';
         world[4] = 'o';
-        System.out.println(world);
+        char lastSymbolW = world[world.length - 1];
+        for (int i = 0; i < world.length - 1; i++) {
+            System.out.print(world[i] + ", ");
+        } {
+            System.out.print(lastSymbolW);
+        }
     }
 }
